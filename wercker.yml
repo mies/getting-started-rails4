@@ -9,3 +9,6 @@ build:
     - script:
         name: psql version
         code: psql --version
+    - script:
+        name: Set up db
+        code: RAILS_ENV=test bundle exec rake db:schema:load
