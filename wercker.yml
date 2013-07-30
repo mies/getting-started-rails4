@@ -1,6 +1,6 @@
 box: wercker/ubuntu12.04-ruby2.0.0
 services:
-  - mies/ubuntu12.04-ruby2.0.0-psql9.2@0.0.7
+  - mies/postgresql9.2@0.1.0
 build:
   steps:
     - bundle-install
