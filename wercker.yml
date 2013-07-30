@@ -6,3 +6,6 @@ build:
     - bundle-install
     - rails-database-yml:
         service: postgresql
+    - script:
+        name: Set up db
+        code: RAILS_ENV=test bundle exec rake db:schema:load
