@@ -7,5 +7,5 @@ build:
     - rails-database-yml:
         service: postgresql
     - script:
-        - name: psql version
-        - code: psql --version
+        name: psql version
+        code: psql --version
